@@ -20,7 +20,6 @@ Via Composer
 
 ``` bash
 $ composer require jaewun/discourse-sso-laravel
-$ composer update
 ```
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
