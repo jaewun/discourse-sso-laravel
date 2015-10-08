@@ -21,12 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jaewun\\DiscourseSSOLaravel\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Jaewun\\DiscourseSSOLaravel\\Test\\": "tests"
+            "jaewun\\DiscourseSSOLaravel\\": "src/"
         }
     },
     "extra": {
