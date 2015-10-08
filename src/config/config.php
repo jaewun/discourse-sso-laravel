@@ -10,6 +10,7 @@ return array(
      | You can disable Discourse SSO simply by setting enable to false.
      |
      */
+
     "enabled" => true,
 
     /*
@@ -20,7 +21,20 @@ return array(
      | Tell SSO where to return your users to once they've authenticated.
      |
      */
+
     "discourse_url" => "http://example.discourse.com",
+
+    /*
+    |--------------------------------------------------------------------------
+    | Discourse Instance URL                                                  |
+    |--------------------------------------------------------------------------
+    |
+    | Tell SSO where to return your users to once they've authenticated.
+    |
+    */
+
+    "sso_route" => "/discourse/sso",
+
 
     /*
      |--------------------------------------------------------------------------
@@ -31,6 +45,7 @@ return array(
      | This should be the same as what you have set in Discourse.
      |
      */
+
     "secret" => env('DISCOURSE_SSO_SECRET', "example-key"),
 
 
@@ -43,6 +58,7 @@ return array(
      | This should be the same as what you have set in Discourse.
      |
      */
+
     "user_fields" => [
         // REQUIRED FIELDS
         'id_field' => 'id',
