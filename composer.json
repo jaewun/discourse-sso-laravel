@@ -1,0 +1,37 @@
+{
+    "name": "jaewun/discourse-sso-laravel",
+    "description": "A package specifically for Laravel, helping with Discourse's SSO login.",
+    "keywords": [
+        "laravel",
+        "discourse",
+        "sso"
+    ],
+    "homepage": "https://github.com/jaewun/discourse-sso-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Johnson",
+            "email": "jaewun@me.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : ">=5.3.0",
+        "cviebrock/discourse-php": "^0.9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jaewun\\DiscourseSSOLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jaewun\\DiscourseSSOLaravel\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
