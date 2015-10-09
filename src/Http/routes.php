@@ -21,7 +21,7 @@ Route::get(config('discourse-sso.sso_route'), ["middleware" => "auth", function 
     $extraParameters['username'] = config('discourse-sso.user_fields.username_field') ?
         auth()->user()->{config('discourse-sso.user_fields.username_field')} : null;
 
-    $extraParameters['name'] = config('discourse-sso.user_fields.name_field') ?
+    $extraParameters['name'] = config('discourse-sso.user_fields.full_name_field') ?
         auth()->user()->{config('discourse-sso.user_fields.full_name_field')} : null;
 
 
