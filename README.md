@@ -46,7 +46,7 @@ If you discover any security related issues, please email jaewun@me.com instead 
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/league/:package_name.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/jaewun/discourse-sso-laravel.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/jaewun/discourse-sso-laravel.svg?style=flat-square
 
