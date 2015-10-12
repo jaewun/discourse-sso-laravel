@@ -23,6 +23,13 @@ Route::get(config('discourse-sso.sso_route'), ["middleware" => "auth", function 
 
     $extraParameters['name'] = config('discourse-sso.user_fields.full_name_field') ?
         auth()->user()->{config('discourse-sso.user_fields.full_name_field')} : null;
+    $extraParameters['avatar_url'] = config('discourse-sso.user_fields.avatar_url_field') ?
+        auth()->user()->{config('discourse-sso.user_fields.avatar_url_field')} : null;
+
+    $extraParameters['avatar_force_update'] = config('discourse-sso.user_fields.avatar_url_field') ?
+        config('discourse-sso.user_fields.avatar_force_update') : null;
+
+    $extraParameters['suppress_welcome_message'] = config('discourse-sso.suppress_welcome_message');
 
 
     $query = $sso->getSignInString($nonce, $userId, $userEmail, $extraParameters);

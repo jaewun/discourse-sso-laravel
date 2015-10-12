@@ -13,23 +13,26 @@ return array(
 
     "enabled" => true,
 
+
     /*
      |--------------------------------------------------------------------------
      | Discourse Instance URL                                                  |
      |--------------------------------------------------------------------------
      |
-     | Tell SSO where to return your users to once they've authenticated.
+     | This is the URL of your Discourse instance.
      |
      */
 
-    "discourse_url" => "http://example.discourse.com",
+    "discourse_url" => "http://discourse.example.com",
+
 
     /*
     |--------------------------------------------------------------------------
-    | Discourse Instance URL                                                  |
+    | Discourse SSO Route                                                     |
     |--------------------------------------------------------------------------
     |
-    | Tell SSO where to return your users to once they've authenticated.
+    | Change this if you wish to change the route that is used for SSO.
+    | A sane default has already been set for you.
     |
     */
 
@@ -55,7 +58,6 @@ return array(
      |--------------------------------------------------------------------------
      |
      | This tells SSO what fields to look at on your User model.
-     | This should be the same as what you have set in Discourse.
      |
      */
 
@@ -65,7 +67,30 @@ return array(
         'email_field' => 'email',
         // OPTIONAL - if null, Discourse will make something up based on the email address
         'username_field' => null,
-        'full_name_field' => 'name'
+        'full_name_field' => 'name',
+        'avatar_url_field' => 'image_url'
     ],
+
+    /*
+     |--------------------------------------------------------------------------
+     | Advanced SSO Settings - Suppress Welcome Message                                                   |
+     |--------------------------------------------------------------------------
+     |
+     | Discourse sends a Welcome message to all new users created by SSO.
+     | Setting this value to true suppresses this message.
+     |
+     */
+    "suppress_welcome_message" => false,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Advanced SSO Settings - Avatar Force Update                             |
+     |--------------------------------------------------------------------------
+     |
+     | Discourse caches avatars.
+     | Setting this value to true kills the cache when updating avatar_url.
+     |
+     */
+    "avatar_force_update" => true
 
 );
