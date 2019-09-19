@@ -7,6 +7,10 @@
 A simple Discourse SSO integration for Laravel 5.1.
 The goal of this project is help users get SSO up and working on Laravel with as little hassles as possible.
 
+# This Project Is Abandoned
+
+This project is no longer maintained. I recommend using [spinen/laravel-discourse-sso](https://packagist.org/packages/spinen/laravel-discourse-sso)
+
 ## Warning
 
 As per Discourse's SSO Guide...
